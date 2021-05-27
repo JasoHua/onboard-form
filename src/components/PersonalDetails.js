@@ -1,6 +1,7 @@
 import React from 'react';
 import 'date-fns';
 
+import useStyles from './formStyles.js'
 
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -21,30 +22,7 @@ import {
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 
-
-const useStyles = makeStyles({
-    root: {
-      minWidth: 275,
-    },
-    header: {
-        background: "rgb(25,118,210)",
-        color: "white",
-        fontSize: "1.2em"
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 12,
-    },
-  });
-
-  const gendersOptions = [
+const gendersOptions = [
     {
         value: 'Select',
         label: 'Select',
@@ -63,7 +41,6 @@ const useStyles = makeStyles({
       label: 'Other',
     }
   ];
-  
 
 export default function PersonalDetails() {
     const classes = useStyles();

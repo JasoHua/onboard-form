@@ -16,30 +16,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Divider from '@material-ui/core/Divider';
 import ReviewRow from './ReviewRow';
 
-
-const useStyles = makeStyles({
-    root: {
-      minWidth: 275,
-    },
-    header: {
-        background: "rgb(25,118,210)",
-        color: "white",
-        fontSize: "1.2em"
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 12,
-    },
-  });
-
-
+import useStyles from './formStyles.js'
 
 export default function Review() {
     const classes = useStyles();
